@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Titillium+Web&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+h1{font-family: 'Agbalumo';}
+
+html
+{
+    font-family: "Titillium Web", Oswald;
+    /*border: 1px solid;*/
+    height: 99.7vh;
+
+}
+
+/*fazendo a formatação de texto do conteúdo inteiro da página - trocando a fonte padrão*/
+
+body 
+{
+    background: linear-gradient(to right, #a9c8dd, #094d7a);
+    font-family: 'Segoe UI', Candara, "Trebuchet MS", Droid;
+    font-family: "Titillium Web", Oswald;
+    border: 1px solid; /*propriedade para criar uma borda na página inteira
+    height: 99.7vh; /*1 vh (viewport height) equivale a 1% da altura da area de visão da tela desconsiderando as barras de ferramentas*/
+   
+} 
+
+.conteiner 
+{
+    display: grid;
+    box-sizing: border-box; /*propriedade para adicionar em uma dimensao na caixa*/
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr)); /*propriedade para passar a quantidade de colunas, cada argumento é a largura da coluna. px para fixar um tamanha, % para ocupar porcentagem do viewport, fr para gerar colunas de tamanho de unidades fracionario, auto-fit como argumento da funcao repeat ajusta a quantidade de acordo com o tamanho*/
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    height: 99.7vh; /*propriedade para ocupar 100% do viewport*/
+}
+
+.item
+{
+    border: 1px solid green;
+    background: linear-gradient(to right, #a9c8dd, gray);
+}
+
+.header
+{
+    grid-column-start: 1; /*propriedade para informar em qual coluna inicia o marcador*/
+    grid-column-end: 5;
+}
+
+.footer
+{
+    grid-column-start: 1; /*propriedade para informar em qual coluna inicia o marcador*/
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 8;
+    
+
+    font-size: 3%;
+
+}
+
+.nav
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+.main
+{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+
+
+
+
+
+
+ 
+
+.flex-container footer
+{
+    background-color: #DDD5D4;
+    margin-top: 50%;
+    border-top: 1px rgb(126, 6, 6) solid;
+    font-size: 3%;
+    font-family: Droid;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="por-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+
+    <link rel="stylesheet" href="formataTabela04.css">
+
+    <link rel="shortcut icon" type="imagex/png" href="../images/icon.ico">
+    <!-- Incluir fonte no HTML 
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,200;1,400&family=Red+Hat+Display:wght@400;500;700&family=Roboto&display=swap"
+    rel="stylesheet"-->
+</head>
+
+<!-- Para incluir cor de fundo no HTML 
+    <body style="background: linear-gradient(to right, #a9c8dd, #094d7a);">
+-->
+
+<body>    
+    <h1> Teste Formulários</h1>
+    <!--    Metodo usado pelo navgador para enviar os dados. ##get - não seguro ## post - seguro 
+    -->
+    <form action="recebe-dados>php" method="post">
+        <fieldset>
+            <legend>
+                Dados Pessoais
+            </legend>
+            <!--atritubo FOR no label para direcionar o foco ao clicar no nome do label-->
+             <label class="alinha" for="nome-usuario"> 
+                Nome: 
+            </label>
+             <!--atritubo id no input para copmbinar com o atributo FOR do label-->
+            <input type="text" name="nome-do-usuario" placeholder="Forneça seu nome aqui..." autofocus id="nome-usuario"> <br>
+
+
+            <label class="alinha"> 
+                Idade:
+            </label>
+            <input type="number" name="idade" min="0" max="150"> <br>
+            <label class="alinha">
+                Pretenção salarial:
+            </label>
+            <input type="number" name="salario-inicial" min="0" max="1000" step="2"> <br>
+
+            <label class="alinha">
+                Senha de cadastro
+            </label>
+            <input type="password" name="senha"> <br>
+
+            <label class="alinha">
+                Nascimento
+            </label>
+            <input type="date" name="nascimento"> <br>
+
+        </fieldset> <br>
+
+        <fieldset>
+            <legend>
+                Dados profissional
+            </legend>
+            <label>
+                Graduado em:
+            </label> <br>
+            <input type="radio" name="graduado" value="1"> <label>2023</label> <br>
+            <input type="radio" name="graduado" value="2"> <label>2022</label> <br>
+            <input type="radio" name="graduado" value="3"> <label>anterior a 2022</label> <br>
+            <input type="radio" name="graduado" value="4"> <label>Sem graduação</label> <br>
+            <!-- Colchetres para -->
+            <label>
+                Principal area de atuação
+            </label>
+
+            <label><br>
+                Gestao de TI
+            </label>
+                <input type="checkbox" name="Experiencia profissional[]" value="1">
+            
+            <label><br>
+                Desenvolvimento de aplicação
+            </label>
+                <input type="checkbox" name="Experiencia profissional[]" value="2">
+
+            
+
+
+        </fieldset>
+
+        <button>Cadastrar Curriculo</button>
+
+    </form>
+
+
+   
+
+
+    <footer>
+
+        <table>
+            <tr> <!-- Esta é a linha -->
+              <td>
+                <img src="../images/html-icon48x48.png" alt="Imagem Genérica" />
+              </td> <!-- Primeira coluna -->
+              <td>
+                <div class="flex-container footer">
+                    <p>&copy; 2023 HTML Formulários</p>
+                    <p>Desenvolvido por: Carlos Hayden</p>
+              </td> <!-- Segunda coluna -->
+            </tr>
+          </table>
+
+
+    </footer>
+
+
+
+      </body>
+
+
+
+
+</html>

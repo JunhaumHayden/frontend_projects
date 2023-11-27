@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Titillium+Web&display=swap');
+
+/*fazendo a formatação de texto do conteúdo inteiro da página - trocando a fonte padrão*/
+body 
+{
+    font-family: 'Segoe UI', Candara, "Trebuchet MS", Droid;
+    font-family: "Titillium Web", Oswald;
+    margin: 0px;
+    background: linear-gradient(to right, #a9c8dd, #094d7a);
+    /*background-image: url(../images/background01.jpeg);*/
+    background-image: url(../images/9744.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 
+{
+    font-family: Oswald;
+    text-align: center;
+    border-bottom: 1px solid #051938;
+    margin: 0;
+    margin-bottom: 40px;
+    background-color: rgba(118, 138,168, 0.4); /* Ultimo item relativo a opacidade */
+    text-shadow: 1px 1px #ffffff9c;
+}
+
+fieldset
+{
+    width: 40%;
+    background-color: rgba(21,45,34,30%);
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px #051938;
+    margin: 20px auto;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+label.alinha
+{
+    display: inline-block; /* para converter elemento inline para nivel de bloco*/
+    border: 2px solid rgb(78, 77, 77);
+    width: 150px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+/*Para aplicar fontes personalizadas as caixas de texto*/
+input
+{
+    font-family: "Titillium Web",;
+}
+
+/*Aumentar largura de caixas sem utilizar CLASS ou ID. Metodo de seletor*/
+input[name = "nome-do-usuario"]
+{
+    width: 180px;
+    border: 2px solid rgb(78, 77, 77);
+    height: 25px;
+}
+
+input[name = "idade"]
+{
+    width: 180px;
+    border: 2px solid rgb(78, 77, 77);
+    height: 25px;
+}
+
+input[name = "salario-inicial"]
+{
+    width: 180px;
+    border: 2px solid rgb(78, 77, 77);
+    height: 25px;
+}
+
+input[name = "senha"]
+{
+    width: 180px;
+    border: 2px solid rgb(78, 77, 77);
+    height: 25px;
+}
+
+input[name = "nascimento"]
+{
+    width: 180px;
+    border: 2px solid rgb(78, 77, 77);
+    height: 25px;
+}
+
+button 
+{
+    display: block;
+    margin: auto;
+    border: 2px solid #4b4a4a;
+    height: 35px;
+    border-radius: 10%;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+button:hover
+{
+    cursor: pointer;
+    color: antiquewhite;
+}

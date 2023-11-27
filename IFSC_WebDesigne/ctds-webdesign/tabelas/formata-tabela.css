@@ -1,0 +1,32 @@
+ @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Titillium+Web&display=swap');
+
+/*fazendo a formatação de texto do conteúdo inteiro da página - trocando a fonte padrão*/
+body {
+ font-family: 'Segoe UI', Candara, "Trebuchet MS", Droid;
+ font-family: "Titillium Web", Oswald;
+ margin: 100px;
+}
+
+h1 {
+ /*definindo uma borda ao redor do texto do h1*/
+ border-style: solid;
+ border-width: 10px;
+ border-color: rgb(52, 27, 131);
+ /*atalho das propriedades anteriores*/
+ border: 1px solid rgb(52, 27, 131);
+ text-align: center; /*alinhamento de texto na horizontal*/
+ background-color: rgb(100, 100, 100); /*cor do fundo*/
+ color: #ffffff; /*cor da fonte*/
+ box-shadow: 5px 8px 5px 4px rgb(210, 210, 210); /*sombra ao redor da caixa*/
+}
+p {
+    text-align: center;
+}
+
+
+
+
+
+table {
+ font-family: Oswald;
+}

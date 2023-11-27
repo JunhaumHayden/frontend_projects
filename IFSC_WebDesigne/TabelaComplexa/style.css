@@ -1,0 +1,51 @@
+body{
+
+    font-family: roboto;
+    margin: 0;
+}
+
+h2{
+    margin: 0;
+    text-align: center;
+    border-bottom: 2px solid red;
+    background-color: aquamarine;
+    color: green;
+    box-shadow: 0 0 5px rgb(128,128, 128);
+    
+
+}
+
+td, th{
+    border: 2px groove grey; /* Adiciona uma borda para separar as células */
+    width: 20px; /* Define a largura da célula */
+    height: 20px; /* Define a altura da célula */
+    padding: 10px;
+    text-align: center;   
+}
+
+th {
+    background-color: #f2f2f2;
+  }
+
+table{
+    border-collapse: collapse;
+    margin: auto;   
+    text-align: center;
+    width: 100%; /* Ajusta a largura da tabela */
+    border-collapse: collapse;
+    
+}
+
+#format_text{
+    color: aqua;
+}
+.font_red{
+    color: red;
+}
+#format_background{
+    background-color: aqua;
+}
+
+  
+
+  

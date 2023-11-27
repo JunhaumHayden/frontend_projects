@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas02</title>
+
+    <link rel="stylesheet" href="formataTabela03.css">
+
+    <link rel="shortcut icon" type="imagex/png" href="../images/icon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,200;1,400&family=Red+Hat+Display:wght@400;500;700&family=Roboto&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+
+    <h1> Tabelas 03 </h1>
+
+    <table>
+        <!-- se a tabela apresentar uma legenda, a tag caption deve ser a primeira tag-filha de table -->
+        <caption> Web Design - Exercicio com tabelas </caption>
+
+        <tr>
+            <th id="format_tableheader" colspan="2">Cabeçalho 01</th>
+            <th id="format_tableheader" colspan="2">Cabeçalho 02</th>
+            
+        </tr>
+        <tr>
+            <td>Texto 1.1</td>
+            <td>Texto 1.2</td>
+            <td>Texto 1.3</td>
+            <td>Texto 1.4</td>
+        </tr>
+        <tr>
+            <td rowspan="2" id="format_tableheader" >
+                Cabeçalho 03 
+            </td>
+            <td>Texto 2.2</td>
+            <td>Texto 2.3</td>
+            <td>Texto 2.4</td>
+            
+            
+        </tr>
+        <tr>
+            <!-- <td>Texto 3.1</td> -->
+            <td class="celula-com-imagem" >  <ol>
+                <li>
+                  Unidade curricular
+                  <ul>
+                    <li>
+                      Web design I
+                      <ul>
+                        <li>Nota 1</li>
+                        <li>Nota 2</li>
+                        <li>Média final</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Banco de dados
+                      <ul>
+                        <li>Nota 1</li>
+                        <li>Nota 2</li>
+                        <li>Média final</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Resultado semestral
+                  <ol>
+                    <li>Relação de alunos aprovados</li>
+                    <li>Relação de alunos reprovados</li>
+                  </ol>
+                </li>
+              </ol>
+            </td>
+            <td>Texto 3.3</td>
+
+            <td class="celula-com-imagem02" >Texto 3.4</td>
+            
+        </tr>
+        <tr>
+            <td>Texto 4.1</td>
+            <td>Texto 4.2</td>
+            <td>Texto 4.3</td>
+            <td>Texto 4.4</td>
+            
+        </tr>
+
+        <tr>
+            <td colspan="4" id="format_text"> <a href="https://github.com/JunhaumHayden/frontend_projects"> Meu repositorio HTML </a> </td>
+            
+        </tr>
+
+        <tr>
+            <td id="format_tableheader" >Cabeçalho 04</td>
+            <td>Texto 6.2</td>
+            <td colspan="2" >Texto 6.3</td>
+            
+            
+        </tr>
+    </table>
+       
+    
+</body>
+</html>

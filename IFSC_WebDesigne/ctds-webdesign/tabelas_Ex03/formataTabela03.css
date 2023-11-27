@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Titillium+Web&display=swap');
+
+body{
+
+    margin: 0;
+    font-family: 'Segoe UI', Candara, "Trebuchet MS", Droid;
+    font-family: "Titillium Web", Oswald;
+ 
+}
+
+h1{
+    font-family: roboto;
+    margin: 0;
+    height: 100px;
+    text-align: center;
+    border-bottom: 2px solid red;
+    background-color: rgb(252, 174, 91);
+    color: rgb(0, 75, 114);
+    box-shadow: 0 0 5px rgb(128,128, 128);
+}
+
+td, th{
+    border: 2px groove grey; /* Adiciona uma borda para separar as células */
+    width: 20px; /* Define a largura da célula */
+    height: 20px; /* Define a altura da célula */
+    padding: 10px;
+    text-align: center;   
+}
+
+table
+{
+    margin-top: 50px; /* Adicionando margem acima da tabela */
+    border-collapse: collapse; /* Bordas das celulas */ 
+    text-align: center;
+    width: 100%; /* Ajusta a largura da tabela */
+    
+    
+}
+
+.celula-com-imagem /* . marca class*/
+{
+    background-image: url("../images/icon_remove.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 4px; /* Ajuste conforme necessário */
+    text-align: center; /* Ajuste conforme necessário */
+    color: rgb(153, 153, 153);
+}
+
+.celula-com-imagem02 /* . marca class*/
+{
+    background-image: url("../images/icon36x36.ico");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2px; /* Ajuste conforme necessário */
+    color: antiquewhite;
+    text-align: center;
+}
+
+
+#format_tableheader
+{
+    background-color: rgb(154, 154, 255);
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+#format_text /* # marca ID*/
+{
+    text-align: center;
+    
+}
+
+#format_link /* # marca ID*/
+{
+    background-color: rgb(141, 142, 142);
+    color: rgb(188, 4, 4);
+    text-align: center;
+}
