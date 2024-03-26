@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+html {
+ height: 100%;
+}
+
+body {
+ font-family: Agbalumo;
+ height: 100%;
+}
+
+.conteiner {
+ width: 50%;
+ border: 1px solid;
+ margin: auto;
+ height: 60%;
+ display: grid; /*prepara o contêiner para obedecer as regras do CSS que tornarão o leiaute responsivo*/
+ text-align: center;
+ box-sizing: border-box; /*esta propriedade faz o navegador contar, na largura ou altura da caixa, também, os valores de padding e espessura de borda*/
+ grid-template-columns:  repeat(auto-fit, minmax(1fr, 2fr)); /*esta propriedade especifica o número de colunas e a largura de cada uma na grade*/
+ grid-template-rows: 25% 50% 25%;
+}
+
+/*usando o conceito de seletor descendente para o navegador aplicar um fundo apenas às divs que estão dentro do contêiner*/
+div.conteiner div {
+ background-color: lightblue;
+ border: 1px solid;
+ font-size: 3vw; /*unidade de fonte que leva em consideração a largura de tela para calcular so seu tamanho*/
+}
+
+.item1 {
+ grid-column-start: 1;
+ grid-column-end: 4;
+}
+
+.item3 {
+ grid-row-start: 2;
+ grid-row-end: 4;
+ grid-column-start: 2;
+ grid-column-end: 3;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}

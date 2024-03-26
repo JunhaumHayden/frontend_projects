@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursividade</title>
+
+    <link rel="stylesheet" href="AtivAval_model-grid.css">
+
+    <link rel="shortcut icon" type="imagex/png" href="../images/icon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,200;1,400&family=Red+Hat+Display:wght@400;500;700&family=Roboto&display=swap"
+    rel="stylesheet">
+</head>
+
+
+<body>
+    <h1>Atividade Avaliativa 02</h1>
+
+    <div class="conteiner">
+        <header class="header">Formulários com banco de dados</header>
+        
+        <fieldset class = "alinha-esquerda">
+            <legend> Banco de dados - cadastro de informaçoes </legend>
+            <div class="formularios">
+                <label class="alinha" for="codigo-do-cliente"> Código do cliente: </label>
+                <input type="text" name="codigo-do-cliente" autofocus id="codigo-do-cliente"> <br> <!--autofocus só aparece uma única vez-->
+
+                <label class="alinha"> Valor da compra (em R$): </label>
+                <input type="number" name="valor-de-compra"> <br>
+
+                <label> Tipo de equipamento adquirido: </label> <br>
+                <input type="radio" name="equipamento-adquirido" value="1" > <label> Impressora </label> <br>
+                <input type="radio" name="equipamento-adquirido" value="2" checked> <label> Notebook </label> <br>
+                <input type="radio" name="equipamento-adquirido" value="3"> <label> Smartphone </label> <br>
+            </div>
+
+            <button> Cadastrar compra </button>
+
+        </fieldset>
+
+        <fieldset>
+            <legend> Dados profissionais </legend>
+            <div class="formularios">
+                
+
+                <label class="alinha" for="codigo-do-cliente-pesquisa"> Código do cliente para a pesquisa: </label>
+                <input type="text" name="codigo-do-cliente-pesquisa" autofocus id="codigo-do-cliente-pesquisa"> <br> <!--autofocus só aparece uma única vez-->
+
+                <label class="alinha"> Retificação do valor da compra (em R$): </label>
+                <input type="number" name="retificacao-valor-de-compra"> <br>
+            </div>
+
+                <button> Alterar valor da compra </button>
+
+                </fieldset>
+    </div>
+</body>
+
+
+    
+
+
+</html>

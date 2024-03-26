@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Slab&display=swap');
+
+body {
+ font-family: "Roboto Slab";
+ margin: 0;
+ background-image: url(https://img.freepik.com/vetores-gratis/banner-moderno-com-design-abstrato-de-baixo-poli_1048-14340.jpg?t=st=1699295639~exp=1699296239~hmac=ec3f5994bf25a7e21ff9b3f28c77f3ab79ad011b0eec142ee505c5600d620dbb);
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+h1 {
+ font-family: Oswald;
+ text-align: center;
+ border-bottom: 1px solid #051938;
+ margin: 0;
+ margin-bottom: 40px;
+ background-color: rgba(255, 255, 255, 70%);
+ text-shadow: 1px 1px #ffffff9c;
+}
+
+fieldset {
+ width: 50%;
+ background-color: rgba(255, 255, 255, 70%);
+ border-radius: 10px;
+ box-shadow: 5px 5px 5px #051938;
+ margin: 20px auto;
+ padding-top: 20px;
+ padding-left: 20px;
+}
+
+/*alinahmento de labels às suas respectivas caixas*/
+label.alinha {
+ display: inline-block; /*converte um elemento inline para nível de bloco*/
+ width: 250px;
+ text-align: right;
+ margin-bottom: 10px;
+}
+
+/*para que o CSS aplique fontes personalizadas às caixas de texto*/
+input {
+ font-family: "Roboto Slab";
+}
+
+/*vamos aumentar a largura da caixa com o nome do usuário, sem usar class ou id, mas utilizando o conceito de seletores de atributos no CSS*/
+input[name="nome-do-usuario"]
+ {
+ width: 280px;
+ }
+
+ button {
+  display: block; /*para centralizar um botão, converteno-o de inline para block*/
+  margin: auto;
+  margin-bottom: 20px;
+  font-family: "Roboto Slab";
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+ }
+
+ button:hover { /*hover é o estado disparado pelo navegador quando o usuário coloca o cursor sobre o elemento, sem clicá-lo*/
+  cursor: pointer;
+  color: #051938;
+ }
+
+ /*podemos usar o estado de foco sobre um elemento no CSS e aplicar a este elemento que tem o foco, qualquer formatação que quisermos. Lembrar que um link recebe, também, o estado de foco*/
+ input:focus, button:focus {
+  background-color: rgba(118, 137, 169, 0.1);
+ }
+
+
+

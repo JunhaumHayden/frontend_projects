@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title> Formulários com HTML5 </title> 
+  <link rel="stylesheet" href="formata-formularios.css">
+</head> 
+
+<body>
+  <h1> Formulários com HTML5 e CSS3 - cadastro de currículo on-line </h1>
+
+  <!--observe o método usado pelo navegador para enviar os dados ao servidor. Por razões de segurança (criptografia de dados), sempre utilize post-->
+  <form action="recebe-dados.php" method="post">
+    <fieldset>
+      <legend> Dados pessoais </legend>
+      <label class="alinha" for="nome-usuario"> Nome: </label>
+      <input type="text" name="nome-do-usuario" placeholder="Forneça seu nome aqui..." autofocus id="nome-usuario"> <br> <!--autofocus só aparece uma única vez-->
+
+      <label class="alinha"> Idade: </label>
+      <input type="number" name="idade" min="0" max="150"> <br>
+
+      <label class="alinha"> Sua pretensão salarial inicial: </label>
+      <input type="number" name="salario-inicial" min="0" max="10000" step="0.01" required> <br>
+
+      <label class="alinha"> Senha de cadastro: </label>
+      <input type="password" name="senha"> <br>
+
+      <label class="alinha"> Aniversário: </label>
+      <input type="date" name="aniversario">
+    </fieldset>
+
+    <fieldset>
+      <legend> Dados profissionais </legend>
+
+      <label> Graduado em: </label> <br>
+      <input type="radio" name="graduado" value="1" checked> <label> 2023 </label> <br>
+      <input type="radio" name="graduado" value="2"> <label> 2022 </label> <br>
+      <input type="radio" name="graduado" value="3"> <label> Antes de 2022 </label> <br>
+
+      <input type="radio" name="graduado" value="4"> <label> Sem graduação </label> <br> <br>
+      
+      <!--note a prsença de colchetes após o atributo name de um checkbox. Se você esquecê-los, o navegador irá enviar ao servidor somente a última opção marcada-->
+      <label> Principais área de atuação profissional: </label> <br>
+      <input type="checkbox" name="experiencia-profissional[]" value="1" checked> <label> Desenvolvimento de aplicações </label> <br>
+      
+      <input type="checkbox" name="experiencia-profissional[]" value="2"> <label> Gestão de TI </label>
+    </fieldset>
+
+    <button> Cadastrar currículo </button>
+  </form>    
+</body> 
+</html> 

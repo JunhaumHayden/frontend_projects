@@ -1,0 +1,80 @@
+ @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Titillium+Web&display=swap');
+
+/*fazendo a formatação de texto do conteúdo inteiro da página - trocando a fonte padrão*/
+body {
+ font-family: 'Segoe UI', Candara, "Trebuchet MS", Droid;
+ font-family: "Titillium Web", Oswald;
+ margin-top: 0;
+ margin-left: 0;
+ margin-right: 0;
+ margin-bottom: 0;
+}
+
+h1 {
+ /*definindo uma borda ao redor do texto do h1*/
+ border-style: solid;
+ border-width: 10px;
+ border-color: rgb(52, 27, 131);
+ /*atalho das propriedades anteriores*/
+ border: 1px solid rgb(52, 27, 131);
+ text-align: center; /*alinhamento de texto na horizontal*/
+ background-color: rgb(100, 100, 100); /*cor do fundo*/
+ color: #ffffff; /*cor da fonte*/
+ box-shadow: 5px 8px 5px 4px rgb(210, 210, 210); /*sombra ao redor da caixa*/
+ margin-top: 0;
+ margin-left: 0;
+ margin-right: 0;
+ margin-bottom: 0;
+ margin: 0;
+ margin-bottom: 70px;
+}
+
+p {
+ text-align: justify;
+ margin-left: 20px;
+ margin-right: 10px;
+ text-indent: 100px; /*dsitância da primeira linha do parágrafo*/
+}
+
+.trocar-cor { /*referência de uma classe*/
+ color: red;
+}
+
+#sublinha-texto { /*referência de um id*/
+ text-decoration: underline;
+}
+
+
+table {
+ font-family: Oswald;
+ border: 1px solid #022A35; /*bordas na tabela*/
+ /*border-spacing: 0px; /*controla a distância entre células, sobrepondo as bordas*/
+ border-collapse: collapse; /*retira espaços entre células sem sobrepor as bordas*/
+ width: 500px; /*largura*/
+ height: 400px; /*altura*/
+ margin: auto; /*centralização automática*/
+ margin-bottom: 50px;
+ box-shadow: 5px 5px 5px 5px rgba(2, 42, 53, 55%);
+ background-image: url(https://img.freepik.com/vetores-gratis/vetor-de-plano-de-fundo-de-design-de-tracado-de-pincel-de-aquarela-azul-moderno_1055-18259.jpg?w=900&t=st=1695672260~exp=1695672860~hmac=3b35821d06ec1a1a4469237a9ee1c0a4b2eb2486430d2136f6cc92c162aff3f1);
+ background-size: cover; /*para a imagem "caber" na exata extensão da tabela*/
+}
+
+td, th {
+ border: 1px solid #022A35; /*bordas nas células*/
+}
+
+td {
+ text-align: center; /*centraliza texto na célula*/
+}
+
+th {
+ background-color: rgb(126, 189, 145);
+ font-size: 20px; /*tamanho da fonte*/
+ text-shadow: 1px 1px 1px rgba(255, 255, 255, 70%); /*sombra do texto*/
+}
+
+caption {
+ text-align: right;
+ margin-bottom: 10px;
+ font-style: italic; /*texto em itálico*/
+}

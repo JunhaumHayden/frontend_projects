@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+ font-family: Roboto;
+ margin: 0;
+}
+
+h1 {
+ border-bottom: 1px solid green;
+ text-align: center;
+ margin: 0;
+ background-color: #efefef; 
+}
+
+table {
+ border: 1px solid green;
+ width: 50%;
+ height: 400px;
+ font-size: 20px;
+ margin: auto;
+ margin-top: 40px;
+ box-shadow: 5px 5px 5px rgb(200, 200, 200);
+}
+
+td, th {
+ border: 1px solid green;
+}
+
+th {
+ background-color: rgb(144,238,144);
+}
+
+td.formata-fundo {
+ background-image: url(https://icons.iconarchive.com/icons/designbolts/cute-social-2014/256/CSS3-icon.png);
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+}
+
+td.alinha-direita {
+ text-align: right;
+ text-decoration: underline;
+ padding-right: 10px;
+}
+
+td#formata-texto {
+ background-color: rgb(200, 200, 200);
+ text-align: center;
+ color: red;
+}
+
+td {
+ padding-left: 10px;
+}

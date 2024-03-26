@@ -19,7 +19,7 @@ body
     background: linear-gradient(to right, #a9c8dd, #094d7a);
     font-family: 'Segoe UI', Candara, "Trebuchet MS", Droid;
     font-family: "Titillium Web", Oswald;
-    border: 1px solid; /*propriedade para criar uma borda na página inteira
+    border: 1px solid; /*propriedade para criar uma borda na página inteira*/
     height: 99.7vh; /*1 vh (viewport height) equivale a 1% da altura da area de visão da tela desconsiderando as barras de ferramentas*/
    
 } 
@@ -31,6 +31,7 @@ body
     grid-template-columns: repeat(auto-fit, minmax(200px, 2fr)); /*propriedade para passar a quantidade de colunas, cada argumento é a largura da coluna. px para fixar um tamanha, % para ocupar porcentagem do viewport, fr para gerar colunas de tamanho de unidades fracionario, auto-fit como argumento da funcao repeat ajusta a quantidade de acordo com o tamanho*/
     grid-template-rows: 20% 20% 20% 20% 20%;
     height: 99.7vh; /*propriedade para ocupar 100% do viewport*/
+    gap: 20px; /* Espaço entre os fieldsets */
 }
 
 .item

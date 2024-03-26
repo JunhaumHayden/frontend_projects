@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Slab&display=swap');
+
+body 
+{
+    font-family: "Roboto Slab";
+    background: linear-gradient(to right, #a9c8dd, #094d7a);
+    background-size: cover;
+    border: 1px solid black;
+    margin: 0 20px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+}
+
+h1 
+{
+    font-family: Titillium;
+    text-align: center;
+    text-shadow: 1px 1px #ffffff9c;
+    font-size: 20px;
+    box-shadow: 0 6px 8px gray; /* Adicionando sombra à borda - argumentos: Deslocamento horizontal da sombra da borda Deslocamento vertical da sombra da borda Desfoque da sombra da borda (quanto maior o valor, mais desfocada será a sombra) Cor da sombra da borda. Aqui, é uma sombra preta semitransparente rgba(0, 0, 0, 0.1).*/
+    margin: 8px 10px 30px 10px; 
+    /*cima, direita, baixo, esquerda */
+    background: linear-gradient(to top, #f0f2f3, gray);   
+}
+
+.conteiner 
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Espaço entre os fieldsets */
+    justify-content: space-evenly;
+    border: 1px solid black;
+    margin: 10px 20px 10px 25px; 
+    /*cima, direita, baixo, esquerda */
+    padding: 10px 20px 10px 20px;    
+}
+
+
+.formularios 
+{
+    margin: 10px 20px 10px 0px; 
+    /*cima, direita, baixo, esquerda */
+    padding: 10px 20px 10px 0px; 
+    /*cima, direita, baixo, esquerda */
+    height: 150px;  
+}
+
+.header
+{
+    grid-column-start: 1; /*propriedade para informar em qual coluna inicia o marcador*/
+    grid-column-end: 3;
+    text-align: center;
+    text-shadow: 1px 1px #ffffff9c;
+    font-size: 20px;
+    box-shadow: 0 6px 8px gray; /* Adicionando sombra à borda - argumentos: Deslocamento horizontal da sombra da borda Deslocamento vertical da sombra da borda Desfoque da sombra da borda (quanto maior o valor, mais desfocada será a sombra) Cor da sombra da borda. Aqui, é uma sombra preta semitransparente rgba(0, 0, 0, 0.1).*/
+    margin: 8px 10px 30px 10px; 
+    /*cima, direita, baixo, esquerda */
+    background: linear-gradient(to top, #f0f2f3, gray);
+
+    
+}
+
+fieldset {
+    width: calc(100% - 10px); /* Largura ajustada para levar em conta as margens entre os fieldsets */
+    background-color: rgba(255, 255, 255, 70%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #051938;
+    padding-top: 20px;
+    padding-left: 30px;
+    box-sizing: border-box; /* Certificar de que a largura inclui padding e bordas */
+    font-size: smaller;
+}
+
+/*alinahmento de labels às suas respectivas caixas*/
+label.alinha {
+    display: inline-block;
+    width: 250px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+/*para aumentar a largura da caixa com o nome do usuário, sem usar class ou id, mas utilizando o conceito de seletores de atributos no CSS*/
+input[name="codigo-do-cliente"] {
+    width: 140px;
+}
+
+
+input[name="codigo-do-cliente-pesquisa"] {
+    width: 140px;
+}
+
+button {
+    display: block;
+    margin: 10px 10px 3px 0px; 
+    /*cima, direita, baixo, esquerda */
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: "Roboto Slab";
+    height: 40px;
+    width: 280px;
+    font-size: 12px;
+    font-weight: bold;
+    
+    
+}
+
+button:hover {
+    cursor: pointer;
+    color: #051938;
+}
+
+input:focus,
+button:focus {
+    background-color: rgba(118, 137, 169, 0.1);
+}
+

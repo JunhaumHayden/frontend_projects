@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+body {
+ font-family: Teko;
+ margin: 0;
+}
+
+h2 {
+ margin: 0;
+ text-align: center;
+ border-bottom: 1px solid #000;
+ background-color: rgb(60, 60, 60);
+ color: #fff;
+ box-shadow: 0 0 5px 5px rgba(20, 20, 20,0.5);
+ margin-bottom: 50px;
+}
+
+table {
+ border: 1px groove #000;
+ width: 50%;
+ height: 400px;
+ font-size: 22px;
+ margin: auto; /*centralização automática*/
+ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+ border-collapse: collapse;
+}
+
+td, th {
+ border: 1px groove #000;
+}
+
+th {
+ background-color: #061539;
+ color: #fff;
+}
+
+td {
+ text-align: center; 
+}
+
+#formata-texto {
+ text-decoration: underline;
+ font-weight: bold;
+}
+
+.formata-nota {
+ color: red;
+}
+
+.formata-fundo {
+ background-color: rgba(120, 135, 171, 0.5);
+}
