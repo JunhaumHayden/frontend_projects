@@ -2,20 +2,7 @@
 
 
 @import"https://fonts.googleapis.com/ css2?family=Source+Sans+Pro:wght@200;300;400&display=swap";
-
-* { /* Este seletor escolhe todos os elementos do documento e
-    redefine todas as configurações do navegador. */
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 300;
-    vertical-align: baseline;
-    text-decoration: none;
-    list-style: none;
-    }
-    
+   
     * { /* Este seletor escolhe todos os elementos do documento e
     redefine todas as configurações do navegador. */
     margin: 0;
@@ -44,6 +31,7 @@
         display: flex;
         align-items: center;
         color: #fff;
+        border-bottom: 4px solid #ff4081;
     }
     
     header .list-items {
@@ -54,13 +42,45 @@
         align-items: center;
     
     }
+
+    nav {
+        /* background-color: #333; */
+        overflow: hidden;
+        margin-bottom: 25px;
+    
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul li {
+        float: left;
+    }
+    
+    nav ul li a {
+        display: block;
+        color: #c6c3c3;
+        text-align: center;
+        /* padding: 14px 16px; */
+        text-decoration: none;
+    }
+    
+    nav ul li a:hover {
+        background-color: #575757;
+    }
     
     .list-items li a {
-        color: #fff;
+        /* color: #c6c3c3; */
+        margin: 2px;
     }
     
     header .menu {
         justify-content: space-between;
+        border: #122a57;
+        
     }
     
     .apresentacao {
@@ -73,8 +93,8 @@
 
     .botao-destaque {
     /* .botao.botao-destaque { */
-        background: #30C5CC;
-        color: #fff;
+        background: #34d1da;
+        color: #ff4081;
         text-align: center;
         border-radius: 10px;
         width: 70px;
