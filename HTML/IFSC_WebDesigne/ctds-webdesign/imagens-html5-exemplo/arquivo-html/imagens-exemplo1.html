@@ -9,9 +9,23 @@
  <h1> Marcação de imagens com HTML5 </h1>
  <!--imagens locais e remotas-->
  <p> Usando imagens locais: </p>
- <img src="./../imagens1/vovo.jpg" alt="Imagem em 3D do vovô do filme UP, da Pixar" title="Navegador, mostre o título desta imagem. Pode ser o mesmo texto do atributo alt"> <br>
+ <h4>Utilizando a tag picture</h4>
+ <p>Usada no HTML Semantico pode alterar a fonte da imagem de acordo com o tamanho da tela que é exibida</p>
 
- <img src="./../imagens2/vovo.jpg" alt="Imagem em 3D do vovô do filme UP, da Pixar" title="Navegador, mostre o título desta imagem. Pode ser o mesmo texto do atributo alt"> <br>
+<picture>
+  <source srcset="./../imagens2/79289647.jpeg" media="(min-width: 600px)" alt="Imagem tamanho maior de tela" title="Navegador, mostre o título desta imagem. Pode ser o mesmo texto do atributo alt">
+
+  <img src="./../imagens2/vovo.jpg" alt="Imagem em 3D do vovô do filme UP, da Pixar" title="Navegador, mostre o título desta imagem. Pode ser o mesmo texto do atributo alt"> <br>
+</picture>
+
+ <h4>Utilizando a tag Figure e ficaption</h4>
+ <p>Usada no HTML Semantico envolve todos os atributos relacionado da imagem</p>
+ <figure>
+ <img src="./../imagens1/vovo.jpg" alt="Imagem em 3D do vovô do filme UP, da Pixar" title="Navegador, mostre o título desta imagem. Pode ser o mesmo texto do atributo alt"> <br>
+ <figcaption>Esta é uma legenda da imagem</figcaption>
+</figure>
+
+
 
  <!-- exemplo de imagem remota-->
  <p> Abaixo, uma imagem remota: </p>

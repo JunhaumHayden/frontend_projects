@@ -48,6 +48,9 @@ Conteúdo:
 - **Reflexões e Aprendizados:** De vez em quando, vou compartilhar postagens reflexivas sobre os obstáculos que enfrentei, as soluções que encontrei e as lições que aprendi ao longo do caminho.
 
 - **Colaboração e Feedback:** Se você também está começando ou é um desenvolvedor mais experiente, adoraria receber feedback construtivo e dicas para melhorar minhas habilidades e projetos.
+- **Links relacionados:
+  MDN :https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element
+  Validados W3School (Markup Validation Service): https://validator.w3.org/#validate_by_input  
 
 
 Este repositório é um espaço para registrar minha evolução como desenvolvedor frontend. Espero que, ao compartilhar meus desafios e conquistas, eu possa inspirar outros iniciantes e criar uma comunidade de aprendizado. Junte-se a mim nesta jornada emocionante de crescimento e descoberta no mundo do desenvolvimento frontend!
